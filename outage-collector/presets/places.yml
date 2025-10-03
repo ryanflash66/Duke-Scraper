@@ -1,0 +1,21 @@
+# Geographic presets for outage collector
+# Raleigh preset follows the previously agreed schema
+raleigh:
+  jurisdiction: "DEC"
+  center:
+    lat: 35.5000
+    lng: -80.0000
+  radius_km: 400
+  bbox:
+    min_lat: 25.0
+    max_lat: 38.0
+    min_lng: -85.0
+    max_lng: -75.0
+  polygon:
+    - { lat: 37.800, lng: -85.000 }
+    - { lat: 37.800, lng: -75.000 }
+    - { lat: 33.000, lng: -75.000 }
+    - { lat: 32.000, lng: -79.000 }
+    - { lat: 30.500, lng: -82.500 }
+    - { lat: 33.500, lng: -85.000 }
+  query_params: {}
