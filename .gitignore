@@ -28,7 +28,10 @@ htmlcov/
 # IDE / editor folders
 .idea/
 .vscode/
+
+# VS Code workspace files
 *.code-workspace
+*.vscode
 
 # Environment configuration
 .env
