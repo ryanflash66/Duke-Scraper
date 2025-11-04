@@ -1,0 +1,10 @@
+*** Begin Patch
+*** Update File: sarimax.py
+@@
+-from statsmodels.tools.sm_exceptions import ConvergenceWarning, ModelFitWarning
++try:
++    from statsmodels.tools.sm_exceptions import ConvergenceWarning, ModelFitWarning
++except ImportError:
++    from statsmodels.tools.sm_exceptions import ConvergenceWarning
++    ModelFitWarning = ConvergenceWarning
+*** End Patch
