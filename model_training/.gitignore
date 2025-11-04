@@ -1,0 +1,54 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+.conda/
+conda-env/
+pip-wheel-metadata/
+*.egg-info/
+
+# Packaging / build artifacts
+build/
+dist/
+*.egg
+.eggs/
+
+# Testing cache / coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Editor / IDE settings
+.vscode/
+.idea/
+*.code-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Project-generated artifacts
+content/data/models/
+content/data/analysis_outputs/
+content/data/variation_analysis/
+content/data/step10_residuals_and_importance/
+content/data/scoreboards/
+content/data/*pred*.csv
+content/data/*evaluation*.csv
+
+# Logs
+*.log
