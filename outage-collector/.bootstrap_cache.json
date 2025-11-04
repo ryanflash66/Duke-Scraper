@@ -1,0 +1,26 @@
+{
+  "template": {
+    "url": "https://prod.apigee.duke-energy.app/outage-maps/v1/outages?jurisdiction=DEC",
+    "method": "GET",
+    "headers": {
+      "accept": "application/json, text/plain, */*",
+      "accept-language": "en-US,en;q=0.9",
+      "authorization": "Basic NElSUXFCU1phQjZzMXluaGhBM3NDSjl1QWNqYzdlNzZZbXBzT04za1VYUTVROEJhOkd6cTVZVkl2R2p2eWphNnNzZmVEVWFTaGFjc2tqcWJ2NXZsa29kWElQQ1c4aGFTQkh3cVFNQ29JU3ZPeWJrMWc=",
+      "origin": "https://outagemap.duke-energy.com",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+    },
+    "query": {
+      "jurisdiction": [
+        "DEC"
+      ]
+    },
+    "body": null
+  },
+  "retrieved_at": "2025-09-30T10:08:22.009839Z",
+  "source_urls": [
+    "https://outagemap.duke-energy.com/#/current-outages/ncsc",
+    "https://outagemap.duke-energy.com/#/current-outages",
+    "https://outagemap.duke-energy.com/#/current",
+    "https://outagemap.duke-energy.com/#/"
+  ]
+}

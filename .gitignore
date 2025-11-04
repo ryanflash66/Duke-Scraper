@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env/
+.venv/
+venv/
+pwroutage/
+
+# Packaging / build artifacts
+build/
+dist/
+*.egg-info/
+
+# Logs and debugging
+*.log
+
+# Testing / coverage
+.pytest_cache/
+.tox/
+.nox/
+.coverage*
+coverage.xml
+htmlcov/
+
+# IDE / editor folders
+.idea/
+.vscode/
+
+# VS Code workspace files
+*.code-workspace
+*.vscode
+
+# Environment configuration
+.env
+.env.*
+
+# Generated data / caches
+outage-collector/data/
+outage-collector/.bootstrap_cache.json
+playwright-report/
+
+# OS files
+.DS_Store
+Thumbs.db

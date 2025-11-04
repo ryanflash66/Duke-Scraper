@@ -1,0 +1,17 @@
+{
+  "features": [
+    {
+      "attributes": {
+        "sourceEventNumber": "A123",
+        "deviceLatitudeLocation": 35.8,
+        "deviceLongitudeLocation": -78.7,
+        "customersAffectedNumber": 25,
+        "outageCause": "weather"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-78.7, 35.8]
+      }
+    }
+  ]
+}
