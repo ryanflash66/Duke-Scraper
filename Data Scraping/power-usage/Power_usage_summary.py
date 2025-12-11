@@ -3,7 +3,14 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
-from caas_jupyter_tools import display_dataframe_to_user
+
+try:
+    from caas_jupyter_tools import display_dataframe_to_user
+except ImportError:
+    def display_dataframe_to_user(title, df):
+        """Fallback display helper when caas_jupyter_tools is unavailable."""
+        print(title)
+        print(df)
 
 # Base settings
 eta_charge = 0.95

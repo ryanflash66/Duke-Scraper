@@ -34,8 +34,10 @@ except ImportError:
 import warnings
 import matplotlib.pyplot as plt
 
-DEFAULT_TRAIN = Path("content/data/train_15min.csv")
-DEFAULT_TEST = Path("content/data/test_15min.csv")
+SCRIPT_DIR = Path(__file__).resolve().parent
+DATA_DIR = SCRIPT_DIR / "content" / "data"
+DEFAULT_TRAIN = DATA_DIR / "train_15min.csv"
+DEFAULT_TEST = DATA_DIR / "test_15min.csv"
 DEFAULT_TARGET = "baseline.out.site_energy.total.energy_consumption.kwh"
 DEFAULT_SEASONAL_PERIOD = 96
 DEFAULT_ORDER_GRID = "0,1"

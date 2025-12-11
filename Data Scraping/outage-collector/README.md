@@ -22,10 +22,10 @@
    python -m playwright install
    ```
 
-3. Move into the project directory:
+3. Move into the project directory (from the repo root):
 
    ```powershell
-   Set-Location .\outage-collector
+   Set-Location ".\Data Scraping\outage-collector"
    ```
 
 4. Launch the collector via the helper script (override parameters as needed):
@@ -51,6 +51,6 @@ To add a new territory:
 Run the test suite (from the repository root) after making changes:
 
 ```powershell
-Set-Location .\outage-collector
+Set-Location ".\Data Scraping\outage-collector"
 ..\pwroutage\Scripts\python.exe -m pytest
 ```
