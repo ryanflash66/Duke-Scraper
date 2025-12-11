@@ -6,8 +6,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
 
-# Directories where Step 6 saved predictions
-BASE = Path("/analysis_outputs")
+# Directories where Step 6 saved predictions (relative to this script)
+BASE_DIR = Path(__file__).resolve().parent
+BASE = BASE_DIR / "content" / "data" / "analysis_outputs"
 pred_paths = {
     "hourly": BASE / "preds_hourly",
     "15min":  BASE / "preds_15min"

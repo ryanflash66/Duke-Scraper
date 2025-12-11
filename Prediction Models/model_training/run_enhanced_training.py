@@ -19,9 +19,10 @@ from sklearn.preprocessing import StandardScaler
 from feature_engineering import build_feature_table
 
 
-DATA_DIR = Path("model_training/content/data")
-MODEL_DIR = Path("model_training/content/data/models")
-ANALYSIS_DIR = Path("model_training/content/data/analysis_outputs")
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "content" / "data"
+MODEL_DIR = DATA_DIR / "models"
+ANALYSIS_DIR = DATA_DIR / "analysis_outputs"
 MODEL_DIR.mkdir(parents=True, exist_ok=True)
 ANALYSIS_DIR.mkdir(parents=True, exist_ok=True)
 

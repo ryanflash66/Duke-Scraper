@@ -14,17 +14,19 @@ from sklearn.metrics import r2_score
 # 1. CONFIG
 # =========================================================
 
-DATA_PATH = "15_minute_timeseries_data_cleaned.xlsx"
+BASE_DIR = Path(__file__).resolve().parent
+
+DATA_PATH = BASE_DIR / "model_training" / "15_minute_timeseries_data_cleaned.xlsx"
 TIME_COL = "Timestamp (EST)"
 
 # Forecast electricity total (column U)
 TARGET_COL = "baseline.out.electricity.total.energy_consumption.kwh"
 
 # Where to save the hourly dataset
-HOURLY_CSV_PATH = "hourly_from_15min_electricity.csv"
+HOURLY_CSV_PATH = BASE_DIR / "model_training" / "hourly_from_15min_electricity.csv"
 
 # Where to save figures
-PLOTS_DIR = Path(__file__).resolve().parent / "plots"
+PLOTS_DIR = BASE_DIR / "charts"
 PLOTS_DIR.mkdir(exist_ok=True)
 
 
