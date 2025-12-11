@@ -35,7 +35,8 @@ planning discussions around critical load support.
    ```powershell
    Set-Location ".\Data Scraping\outage-collector"
    ```
-   Use the helper PowerShell script (or invoke the module with `python -m collector`)
+   Use the helper PowerShell script (or invoke the module with `python -m collector` —
+   the module name is `collector` even though the project folder is `outage-collector`)
    to launch it.
 4. **Run the FastAPI operations plane** and polling loop; the helper script
    defaults to the Raleigh preset, writes exports to `data/`, and serves on port 8000.
